@@ -37,5 +37,9 @@ docker login
 docker push mydockeraccount/my-react-app:latest
 ```
 
+# Github Actions
+
+There is a workflow defined [here](./.github/workflows/docker-image.yml) to create a docker image. 
+
 Enjoy! :heart:
 
