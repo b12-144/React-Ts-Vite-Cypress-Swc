@@ -11,12 +11,13 @@ export enum DayOfWeek{
     Wednesday,
     Thursday,
     Friday,
-    Saturday
+    Saturday,
+    Unknown
 }
 
 export class DateTime{
 
-    public _luxonDate=LuxonDate.now();
+    public _luxonDate:LuxonDate=LuxonDate.now();
 
     constructor() {}
 
@@ -140,7 +141,7 @@ export class DateTime{
         return this._luxonDate.daysInMonth;
     }
 
-    public get dayOfWeek():DayOfWeek{
+    public get dayOfWeek():DayOfWeek {
         switch(this._luxonDate.weekday){
             case 1: return DayOfWeek.Monday;
             case 2: return DayOfWeek.Tuesday;
@@ -150,6 +151,7 @@ export class DateTime{
             case 6: return DayOfWeek.Saturday;
             case 7: return DayOfWeek.Sunday;
         }
+        //return DayOfWeek.Unknown;
     }
 
     public get dayOfYear():number{
@@ -368,7 +370,7 @@ export class DateTime{
      * format – choose between the basic and extended format. Defaults to 'extended'.
      */
     public toISODate(opts?: ToISOTimeOptions): string{
-        return this._luxonDate.toISODate(opts);
+        return this._luxonDate?.toISODate(opts);
     }
 
     public toUTC():DateTime{
