@@ -36,7 +36,7 @@ export default function TailWindCSS() {
             Vite Docs
           </a>
           {' | '}
-          <a className="text-purple-400 underline" href="https://tailwindcss.com/docs" target="_blank" rel="noopener noreferrer">
+          <a className="text-blue-600 underline" href="https://tailwindcss.com/docs" target="_blank" rel="noopener noreferrer">
             Tailwind CSS Docs
           </a>
         </p>

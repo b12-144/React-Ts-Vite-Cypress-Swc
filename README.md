@@ -24,6 +24,18 @@ This React application provides a bootstrap using:
 * [MUI](https://mui.com/)
 * Others... 
 
+# Docker
+In case you want to use Docker, you can create the docker image and test it by executing the following commands from the root folder:
+```bash
+docker build -t my-react-app:latest .
+docker run -p 80:80 -d --name myapp --restart always mydockeraccount/my-react-app:latest
+```
+## Docker Hub
+Publish the image into your docker hub account, by executing the following commands:
+```bash
+docker login
+docker push mydockeraccount/my-react-app:latest
+```
 
 Enjoy! :heart:
 
