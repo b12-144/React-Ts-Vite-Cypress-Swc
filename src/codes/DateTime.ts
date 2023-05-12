@@ -72,10 +72,11 @@ export class DateTime{
      * Returns Mo, Tu, We, Th, Fr, Sa, Su in the right culture
      */
     public static get abbreviatedWeekDayNames():string[]{
-        let result=[];
+        let result:string[]=[];
         let dt=LuxonDate.now().startOf('week');
+        if(!dt)return result;
         for(let d=0;d<7;d++){
-            result.push(dt.weekdayShort);
+            result.push(dt.weekdayShort!);
             dt=dt.plus({day:1});
         }
         return result;
@@ -98,7 +99,7 @@ export class DateTime{
     }
 
     public static daysInMonth(year:number,month:number):number{
-        return LuxonDate.local(year,month).daysInMonth;
+        return LuxonDate.local(year,month).daysInMonth!;
     }
 
     public get date():DateTime{
@@ -138,12 +139,12 @@ export class DateTime{
     }
 
     public get daysInMonth():number{
-        return this._luxonDate.daysInMonth;
+        return this._luxonDate.daysInMonth!;
     }
 
     public get dayOfWeek():DayOfWeek {
         switch(this._luxonDate.weekday){
-            case 1: return DayOfWeek.Monday;
+            case 1: return DayOfWeek.Monday;    
             case 2: return DayOfWeek.Tuesday;
             case 3: return DayOfWeek.Wednesday;
             case 4: return DayOfWeek.Thursday;
@@ -151,7 +152,7 @@ export class DateTime{
             case 6: return DayOfWeek.Saturday;
             case 7: return DayOfWeek.Sunday;
         }
-        //return DayOfWeek.Unknown;
+        return DayOfWeek.Unknown;
     }
 
     public get dayOfYear():number{
@@ -176,20 +177,20 @@ export class DateTime{
     }
 
     public get monthNameLong():string{
-        return this._luxonDate.monthLong;
+        return this._luxonDate.monthLong!;
     }
 
     public get monthNameShort():string{
-        return this._luxonDate.monthShort;
+        return this._luxonDate.monthShort!;
     }
 
     public get weekDayLong():string{
-        return this._luxonDate.weekdayLong;
+        return this._luxonDate.weekdayLong!;
     }
 
     public get weekDayShort():string{
         this._luxonDate.toISO()
-        return this._luxonDate.weekdayShort;
+        return this._luxonDate.weekdayShort!;
     }
 
     /**
@@ -355,7 +356,7 @@ export class DateTime{
     }
 
     public toISO(opts?: ToISOTimeOptions): string{
-        return this._luxonDate.toISO(opts);
+        return this._luxonDate.toISO(opts)!;
     }
 
     /**
@@ -370,7 +371,7 @@ export class DateTime{
      * format – choose between the basic and extended format. Defaults to 'extended'.
      */
     public toISODate(opts?: ToISOTimeOptions): string{
-        return this._luxonDate?.toISODate(opts);
+        return this._luxonDate?.toISODate(opts)!;
     }
 
     public toUTC():DateTime{
