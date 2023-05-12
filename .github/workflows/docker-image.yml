@@ -9,9 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-    - run: npm install -g npm@9.6.6    
-    - run: docker build . --file Dockerfile --tag tezine/reactapp:latest
+     - uses: actions/checkout@v3
+     - run: |
+        npm install -g npm@9.6.6  
+     - run: docker build . --file Dockerfile --tag tezine/reactapp:latest  
