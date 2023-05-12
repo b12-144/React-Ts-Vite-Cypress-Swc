@@ -27,7 +27,7 @@ This React application provides a bootstrap using:
 # Docker
 In case you want to use Docker, you can create the docker image and test it by executing the following commands from the root folder:
 ```bash
-docker build -t my-react-app:latest .
+docker build -t mydockeraccount/my-react-app:latest .
 docker run -p 80:80 -d --name myapp --restart always mydockeraccount/my-react-app:latest
 ```
 ## Docker Hub
