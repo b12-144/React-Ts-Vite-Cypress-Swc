@@ -29,6 +29,7 @@ import ConditionalPage from './pages/ConditionalPage'
 import ListsPage from './pages/ListsPage'
 import HooksSameParent from './pages/HooksSameParent'
 import TypescriptPage from './pages/TypescriptPage'
+import LottiePage from './pages/LottiePage'
 
 const urqlClient = new Client({
   url: 'http://localhost:4000/graphql',
@@ -60,6 +61,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
               <Route path={AppRoutes.emotion} element={<Emotion/>}/>
               <Route path={AppRoutes.dates} element={<Dates/>}/>
               <Route path={AppRoutes.lists} element={<ListsPage/>}/>
+              <Route path={AppRoutes.lottiePage} element={<LottiePage/>}/>
               <Route path={AppRoutes.redux} element={<Redux/>}/>
               <Route path={AppRoutes.serverRequests} element={<ServerRequests/>}/>
               <Route path={AppRoutes.formik} element={<Formik/>}/>

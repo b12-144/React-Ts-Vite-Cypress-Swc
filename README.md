@@ -11,6 +11,7 @@ This React application provides a bootstrap using:
 * [TailWindCSS](https://tailwindcss.com/)
 * [GraphQL](https://graphql.org/)
 * [Hooks](https://react.dev/reference/react)
+* [Lottie animations](https://lottiefiles.com/)
 * [Redux](https://react-redux.js.org/)
 * [SASS](https://sass-lang.com/)
 * [Formik](https://formik.org/)

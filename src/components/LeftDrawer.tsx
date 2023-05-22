@@ -15,6 +15,7 @@ const MenuItems: MenuItem[] = [
     { title: 'Hooks', route: AppRoutes.hooks },
     { title: 'HooksSameParent', route: AppRoutes.hooksSameParent },
     { title: 'Lists', route: AppRoutes.lists },
+    { title: 'Lottie', route: AppRoutes.lottiePage },
     { title: 'Props', route: AppRoutes.props },
     { title: 'Redux', route: AppRoutes.redux },
     { title: 'Sass', route: AppRoutes.sass },

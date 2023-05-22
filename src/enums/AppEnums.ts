@@ -19,5 +19,6 @@ export enum AppRoutes {
     apolloclientTyped='apolloClientTyped',
     sass='sass' ,
     testPage='testPage',
-    typescriptPage='typescriptPage'
+    typescriptPage='typescriptPage',
+    lottiePage='lottiePage'
 }
