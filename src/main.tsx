@@ -31,6 +31,7 @@ import HooksSameParent from './pages/HooksSameParent'
 import TypescriptPage from './pages/TypescriptPage'
 import LottiePage from './pages/LottiePage'
 import RefPage from './pages/RefPage'
+import ImmerPage from './pages/ImmerPage'
 
 const urqlClient = new Client({
   url: 'http://localhost:4000/graphql',
@@ -67,9 +68,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
               <Route path={AppRoutes.serverRequests} element={<ServerRequests/>}/>
               <Route path={AppRoutes.formik} element={<Formik/>}/>
               <Route path={AppRoutes.forms} element={<Forms/>}/>
+              <Route path={AppRoutes.immer} element={<ImmerPage/>}/>  
               <Route path={AppRoutes.props} element={<PropsPage/>}/> 
               <Route path={AppRoutes.refPage} element={<RefPage/>}/> 
-              <Route path={AppRoutes.sass} element={<SassPage/>}/> 
+              <Route path={AppRoutes.sass} element={<SassPage/>}/>  
               <Route path={AppRoutes.stylesPage} element={<StylesPage/>}/> 
               <Route path={AppRoutes.testPage} element={<TestPage/>}/>  
               <Route path={AppRoutes.times} element={<Times/>}/> 

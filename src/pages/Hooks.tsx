@@ -5,7 +5,7 @@ import {formatPostalCode} from "../masks/postalCodeMask";
 
 const Hooks = () => {
 
-    const [name, setName] = useState('');
+    const [name, setName] = useState<string>('');//<string> is optional
     const [postalCode, setPostalCode] = useState('');
 
     return <>

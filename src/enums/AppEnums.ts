@@ -9,6 +9,7 @@ export enum AppRoutes {
     serverRequests = 'server-requests',
     formik = 'formik',
     forms = 'forms',
+    immer='immer',
     lists='lists',
     props='props',
     stylesPage='stylesPage',

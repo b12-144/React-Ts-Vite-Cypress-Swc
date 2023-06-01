@@ -12,6 +12,7 @@ const MenuItems: MenuItem[] = [
     { title: 'Emotion', route: AppRoutes.emotion },
     { title: 'Formik', route: AppRoutes.formik },
     { title: 'Forms', route: AppRoutes.forms },
+    { title: 'Immer', route: AppRoutes.immer },
     { title: 'Hooks', route: AppRoutes.hooks },
     { title: 'HooksSameParent', route: AppRoutes.hooksSameParent },
     { title: 'Lists', route: AppRoutes.lists },
