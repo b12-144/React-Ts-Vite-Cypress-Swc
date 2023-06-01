@@ -3,13 +3,14 @@ type Person= {
   middleName?: string;
   lastName: string;
   children?: JSX.Element;
+  onClick?:()=>void
 }
 function Component1(props: Person) {
   return (
     <>
       <a>First name:{props.firstName} </a>
       <a>Middle name:{props.middleName} </a>
-      <a>Last name:{props.lastName} </a>
+      <a onClick={props.onClick} style={{color:'red',cursor:'pointer'}}>Last name:{props.lastName} </a>
       {props.children}
     </>
   );
@@ -51,7 +52,7 @@ export default function PropsPage() {
   return (
     <>
       <div className="pt-10">
-        <Component1 firstName="Bruno" lastName="Tezine"><a>children</a></Component1>
+        <Component1 firstName="Bruno" lastName="Tezine" onClick={()=>console.log('Event click received from Component1')}><a>children</a></Component1>
         <hr/>
         <Component2 firstName="Bruno" lastName="Tezine"/>
         <hr/>

@@ -7,9 +7,9 @@ const products:any[] = [
 
 export default function ListsPage(){
 
-    const list=products.map(product=>{
-        return <li key={product.id}>{product.title}</li>
-    });
+    const list=products.map((product,index)=>
+        <li key={product.id}>{product.title}</li>
+    );
 
     return <ul>{list}</ul>
 }

@@ -18,6 +18,7 @@ const MenuItems: MenuItem[] = [
     { title: 'Lottie', route: AppRoutes.lottiePage },
     { title: 'Props', route: AppRoutes.props },
     { title: 'Redux', route: AppRoutes.redux },
+    { title: 'Refs', route: AppRoutes.refPage },
     { title: 'Sass', route: AppRoutes.sass },
     { title: 'Server Requests', route: AppRoutes.serverRequests },
     { title: 'Styles', route: AppRoutes.stylesPage },
