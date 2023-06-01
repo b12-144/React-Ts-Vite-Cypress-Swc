@@ -1,21 +1,22 @@
-type FullName= {
+type Person= {
   firstName: string;
   middleName?: string;
   lastName: string;
   children?: JSX.Element;
 }
-function Component1(props: FullName) {
+function Component1(props: Person) {
   return (
     <>
       <a>First name:{props.firstName} </a>
       <a>Middle name:{props.middleName} </a>
       <a>Last name:{props.lastName} </a>
+      {props.children}
     </>
   );
 }
 
 // with optional middleName
-function Component2({ firstName, middleName='N/A',lastName }: FullName) {
+function Component2({ firstName, middleName='N/A',lastName }: Person) {
   return (
     <>
       <a>First name:{firstName} </a>
@@ -26,11 +27,11 @@ function Component2({ firstName, middleName='N/A',lastName }: FullName) {
 }
 
 //default props. This is the best approach when Component has many properties
-const defaultProps: Partial<FullName>= {
+const defaultPerson: Partial<Person>= {
     middleName:'Vacare'
 };
-function Component3(propsIn:FullName){
-    const props = {...defaultProps, ...propsIn};
+function Component3(propsIn:Person){
+    const props = {...defaultPerson, ...propsIn};
     return (
         <>
           <a>First name:{props.firstName} </a>
@@ -50,7 +51,7 @@ export default function PropsPage() {
   return (
     <>
       <div className="pt-10">
-        <Component1 firstName="Bruno" lastName="Tezine" />
+        <Component1 firstName="Bruno" lastName="Tezine"><a>children</a></Component1>
         <hr/>
         <Component2 firstName="Bruno" lastName="Tezine"/>
         <hr/>

@@ -22,6 +22,7 @@ const MenuItems: MenuItem[] = [
     { title: 'Server Requests', route: AppRoutes.serverRequests },
     { title: 'Styles', route: AppRoutes.stylesPage },
     { title: 'TailWindCSS', route: AppRoutes.tailWindCSS },
+    {title: 'TestPage',route: AppRoutes.testPage},
     { title: 'TimeSpan', route: AppRoutes.times },
     { title: 'Typescript', route: AppRoutes.typescriptPage },
     { title: 'Translations', route: AppRoutes.translations },

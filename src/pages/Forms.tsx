@@ -44,7 +44,7 @@ const Forms=()=>{
     function onSubmitClicked(ev:FormEvent) {
         alert(`Name: ${name}, email: ${email}`);
         ev.preventDefault();//to avoid clearing the textfields after submit
-    }
+    }    
 }
 
 export default Forms
