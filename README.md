@@ -1,5 +1,5 @@
 # React Boostrap Application
-This React application provides a bootstrap using:
+This React application provides a bootstrap using the tools below. It's not intended as an architecture blueprint, but as a project that provides several useful tools and how to use them in your React app.
 
 * [Typescript](https://www.typescriptlang.org/)
 * [Vite](https://vitejs.dev/)
