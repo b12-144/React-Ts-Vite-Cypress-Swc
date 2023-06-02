@@ -17,6 +17,7 @@ This React application provides a bootstrap using the tools below. It's not inte
 * [Formik](https://formik.org/)
 * [Axios](https://axios-http.com/)
 * [Urql](https://formidable.com/open-source/urql/)
+* [Use-Immer](https://github.com/immerjs/use-immer)
 * [Emotion](https://emotion.sh/docs/introduction)
 * [Yup](https://github.com/jquense/yup)
 * [react-i18next](https://react.i18next.com/)
